@@ -209,7 +209,7 @@ MS = st.selectbox("MS (0=Low group, 1=High group):", options=[0, 1], format_func
 # ca: numerical input
 #ca = st.number_input("Number of major vessels colored by fluoroscopy (ca):", min_value=0, max_value=4, value=0)
 # thal: categorical selection
-T = st.selectbox("T (T):", options=list(thal_options.keys()), format_func=lambda x: thal_options[x])
+T = st.selectbox("T (T):", options=list(T_options.keys()), format_func=lambda x: T_options[x])
 # Process inputs and make predictions
 feature_values = [MS, size, T, N]
 features = np.array([feature_values])
