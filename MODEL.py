@@ -195,7 +195,7 @@ N = st.selectbox("cN (0=No lymph node metastases, 1=Lymph node metastases):", op
 # chol: numerical input
 #chol = st.number_input("Serum cholesterol in mg/dl (chol):", min_value=100, max_value=600, value=200)
 # fbs: categorical selection
-MS = st.selectbox("MS (0=Low group, 1=High group):", options=[0, 1], format_func=lambda x: 'False (0)' if x == 0 else 'True (1)')
+MS = st.selectbox("MS (0=Low group, 1=High group):", options=[0, 1], format_func=lambda x: 'Low gruop (0)' if x == 0 else 'High group (1)')
 # restecg: categorical selection
 #restecg = st.selectbox("Resting electrocardiographic results:", options=list(restecg_options.keys()), format_func=lambda x: restecg_options[x])
 # thalach: numerical input
