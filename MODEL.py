@@ -184,10 +184,10 @@ feature_names = [
 st.title("LARC Disease Predictor")
 # age: numerical input
 #TMRL = st.number_input("Age:", min_value=-70, max_value=3, value=1)
-size = st.number_input("Tumor size:", min_value=0.1, max_value=10, value=1)
+size = st.number_input("Tumor size:", min_value=0.1, max_value=10.0, value=1.0)
 #distance = st.number_input("Distance:", min_value=0.1, max_value=16, value=1)
 # sex: categorical selection
-cN = st.selectbox("cN (0=No lymph node metastases, 1=Lymph node metastases):", options=[0, 1], format_func=lambda x: 'No lymph node metastases (0)' if x == 0 else 'Lymph node metastases (1)')
+N = st.selectbox("cN (0=No lymph node metastases, 1=Lymph node metastases):", options=[0, 1], format_func=lambda x: 'No lymph node metastases (0)' if x == 0 else 'Lymph node metastases (1)')
 # cp: categorical selection
 #cp = st.selectbox("Chest pain type:", options=list(cp_options.keys()), format_func=lambda x: cp_options[x])
 # trestbps: numerical input
